@@ -148,6 +148,7 @@
     <xstream.version>1.4.5</xstream.version>
     <!-- do not update necessary for lesson -->
     <zxcvbn.version>1.7.0</zxcvbn.version>
+    <versions.java-security-toolkit>1.2.0</versions.java-security-toolkit>
   </properties>
 
   <dependencyManagement>
@@ -249,6 +250,11 @@
         <groupId>org.jruby</groupId>
         <artifactId>jruby</artifactId>
         <version>9.4.2.0</version>
+      </dependency>
+      <dependency>
+        <groupId>io.github.pixee</groupId>
+        <artifactId>java-security-toolkit</artifactId>
+        <version>${versions.java-security-toolkit}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
@@ -409,6 +415,10 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-properties-migrator</artifactId>
       <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.github.pixee</groupId>
+      <artifactId>java-security-toolkit</artifactId>
     </dependency>
   </dependencies>
 
